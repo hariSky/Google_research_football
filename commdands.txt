@@ -1,0 +1,6 @@
+In desktop
+source footballenv/bin/activate
+
+
+Interactive play:
+python3 -m gfootball.play_game --players "keyboard:left_players=1
