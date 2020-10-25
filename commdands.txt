@@ -8,3 +8,7 @@ python3 -m gfootball.play_game --players "keyboard:left_players=1
 
 Find Cudas
 env | grep '^LD_LIBRARY_PATH'
+
+Hack
+cd /usr/lib/cuda/lib64
+sudo ln -s libcudnn.so.8 libcudnn.so.7
