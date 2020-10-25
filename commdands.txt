@@ -4,3 +4,7 @@ source footballenv/bin/activate
 
 Interactive play:
 python3 -m gfootball.play_game --players "keyboard:left_players=1
+
+
+Find Cudas
+env | grep '^LD_LIBRARY_PATH'
