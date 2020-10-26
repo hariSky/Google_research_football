@@ -225,7 +225,7 @@ tensor_board = TensorBoard(log_dir='./logs')
 
 
 # Read the model to continue training or run predictions to see game
-read_model=1
+read_model=0
 if read_model==1:
 	
 
@@ -243,10 +243,10 @@ if read_model==1:
 	
 else:
 	if image_based:
-	    #model_actor = get_model_actor_image(input_dims=state_dims, output_dims=n_actions)
+	    model_actor = get_model_actor_image(input_dims=state_dims, output_dims=n_actions)
 	    model_critic = get_model_critic_image(input_dims=state_dims)
 	else:
-	    #model_actor = get_model_actor_simple(input_dims=state_dims, output_dims=n_actions)
+	    model_actor = get_model_actor_simple(input_dims=state_dims, output_dims=n_actions)
 	    model_critic = get_model_critic_simple(input_dims=state_dims)
 
 ppo_steps = 160
